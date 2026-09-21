@@ -1,56 +1,96 @@
 <div align="center">
 
-# 김광빈 · Gwangbin Kim
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:1F6FEB,100:2F81F7&height=200&section=header&text=Gwangbin%20Kim&fontSize=54&fontColor=FFFFFF&fontAlignY=36&desc=signal%20%E2%86%92%20anomaly&descAlignY=58&descSize=18" />
 
-**신호에서 이상(異常)을 찾아내는 AI 엔지니어**
-
-한성대학교 컴퓨터공학부 · 방산 AI / 신호처리
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=3200&pause=900&color=2F81F7&center=true&vCenter=true&width=600&lines=%EC%8A%A4%ED%8E%99%ED%8A%B8%EB%9F%BC%2C+%EC%9D%8C%EC%84%B1%2C+%EC%84%BC%EC%84%9C+%EC%8B%9C%EA%B3%84%EC%97%B4;%EB%8F%84%EB%A9%94%EC%9D%B8%EC%9D%80+%EB%B0%94%EB%80%8C%EC%96%B4%EB%8F%84+%EB%AC%B8%EC%A0%9C%EB%8A%94+%EA%B0%99%EC%8A%B5%EB%8B%88%EB%8B%A4;%EC%A0%95%EC%83%81%EC%9D%84+%EB%B0%B0%EC%9A%B0%EA%B3%A0%2C+%EB%B2%97%EC%96%B4%EB%82%9C+%EA%B1%B8+%EC%9E%A1%EB%8A%94%EB%8B%A4" />
 
 </div>
 
 ---
 
-## 무엇을 하는 사람인가
+### 안녕하세요 👋
 
-스펙트럼, 음성, 센서 시계열 — 형태는 달라도 **"정상 신호를 학습해 벗어난 것을 잡아낸다"**는 문제는 같습니다.
-라만 분광 신호의 노이즈 제거에 쓴 이중 인코더 구조를 음성 딥페이크 탐지로 옮기고,
-거기서 익힌 재구성 오차 기반 탐지를 다시 UAV/UGV 센서 이상탐지에 적용해 왔습니다.
+한성대 컴공 다니면서 **신호에서 이상한 걸 잡아내는 일**을 하고 있습니다.
 
-도메인을 갈아타며 같은 축을 깊게 파는 쪽을 선호합니다.
+라만 분광 스펙트럼의 노이즈를 걷어내는 구조를 만들었는데, 그게 음성 딥페이크 탐지에도 먹히더라고요.
+거기서 배운 재구성 오차 방식을 다시 드론 센서 이상탐지에 갖다 썼습니다.
 
-## 주요 프로젝트
+도메인은 계속 바뀌는데 하는 일은 결국 똑같습니다 — **정상을 학습해서, 벗어난 걸 잡는다.**
 
-| 프로젝트 | 무엇을 풀었나 | 결과 |
-|---|---|---|
-| **[haegeum-addon](https://github.com/gawbi/haegeum-addon)** | UAV/UGV 유·무인 복합체계의 센서 스푸핑·이상 거동을 VAE 재구성 오차로 실시간 탐지. Red Agent로 공격 캠페인을 설계해 방어 모듈을 역으로 검증 | UGV F1 **0.927**<br>UAV F1 **0.828** |
-| **[hc-roberta-cross-attention](https://github.com/gawbi/hc-roberta-cross-attention)** | 정형 수치 피처와 비정형 텍스트 임베딩이라는 이종 신호를 Cross-Attention으로 융합. 융합 깊이를 3단계로 나눠 대조 실험 | F1 **0.9832**<br>(5-Run 평균) |
+지금은 방산 AI 쪽을 보고 있습니다. 🛰️
 
-> 연구실 과제 및 대회 출품작 2건(라만 스펙트럼 전처리 · 음성 딥페이크 탐지)은 공개 승인 절차 진행 중입니다.
+<br>
 
-## 기술 스택
+### 🔧 만든 것들
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![ROS2](https://img.shields.io/badge/ROS2-22314E?style=flat-square&logo=ros&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**다루는 문제** · 이상탐지(VAE / 재구성 오차) · 어텐션 기반 멀티모달 융합 · 신호 전처리(웨이블릿, 베이스라인 보정) · 생성모델을 이용한 데이터 증강 · 설명가능 AI(LIME / SHAP)
+#### 🛸 <a href="https://github.com/gawbi/haegeum-addon">haegeum-addon</a>
 
-## 지금 하는 일
+드론이랑 지상로봇 센서가 조작당했는지 VAE로 실시간 탐지합니다.
+공격하는 쪽(Red Agent)도 직접 만들어서 방어 모듈을 두들겨 봤어요.
 
-- 유·무인 복합체계 이상탐지 모듈의 **실시간 추론 성능** 개선
-- 스펙트럼 신호 전처리 파이프라인의 재현성 정비
-- 방산 AI의 **신뢰성·설명가능성(Trustworthy AI)** 문헌 정리
+`UGV F1 0.927` · `p99 0.04ms` · `실시간 여유 2,400배`
 
----
+SHAP 붙여보다가 <b>예전에 제가 뽑은 분석이 틀렸던 것도 발견</b>했습니다.
+
+</td>
+<td width="50%" valign="top">
+
+#### 🧬 <a href="https://github.com/gawbi/hc-roberta-cross-attention">hc-roberta-cross-attention</a>
+
+숫자 피처랑 텍스트 임베딩처럼 <b>성격이 다른 두 신호</b>를 Cross-Attention으로 붙이는 실험입니다.
+
+`F1 0.9832` · `5-Run 평균`
+
+융합을 얕게 / 깊게 3단계로 나눠서 뭐가 실제로 효과 있는지 비교했습니다.
+
+</td>
+</tr>
+</table>
+
+> 🔒 연구실 과제랑 대회 출품작 2개(라만 스펙트럼 전처리 · 음성 딥페이크 탐지)는 공개 승인 기다리는 중입니다.
+
+<br>
+
+### 🛠️ 쓰는 것들
+
+<p>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+<img src="https://img.shields.io/badge/ROS2-22314E?style=for-the-badge&logo=ros&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+</p>
+
+**요즘 파고 있는 것** — 이상탐지(VAE) · 어텐션 융합 · 웨이블릿 신호처리 · GAN 데이터 증강 · 설명가능 AI(SHAP)
+
+<br>
+
+### 🐍 제 잔디 먹는 뱀
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gawbi/gawbi/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gawbi/gawbi/output/github-snake.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/gawbi/gawbi/output/github-snake.svg" />
+</picture>
+</div>
+
+<br>
 
 <div align="center">
 
-<img height="150" src="https://github-readme-stats.vercel.app/api?username=gawbi&show_icons=true&hide_border=true&title_color=2F81F7&icon_color=2F81F7&hide=issues" />
-<img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gawbi&layout=compact&hide_border=true&title_color=2F81F7&langs_count=6" />
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=gawbi&show_icons=true&hide_border=true&bg_color=00000000&title_color=2F81F7&icon_color=2F81F7&text_color=8B949E&hide=issues" />
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gawbi&layout=compact&hide_border=true&bg_color=00000000&title_color=2F81F7&text_color=8B949E&langs_count=6" />
+
+<br><br>
+
+<img width="92%" src="https://github-profile-trophy.vercel.app/?username=gawbi&theme=discord&no-frame=true&no-bg=true&margin-w=6&row=1&column=6" />
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2F81F7,50:1F6FEB,100:0D1117&height=120&section=footer" />
 
 </div>
