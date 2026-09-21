@@ -16,9 +16,9 @@
 
 ### 지금 향하는 곳
 
-**ROS2 기반 자율 이동로봇.** 인지와 센서 융합, 그리고 스스로 이상을 알아채는 자율성까지 한 스택 안에서 다루는 것이 목표입니다.
+**매니퓰레이터 모방학습.** 사람이 리더암으로 시연한 동작을 로봇이 배워 스스로 반복하게 만드는 쪽을 보고 있습니다. 텔레오퍼레이션으로 시연을 모으고, 행동 청킹 계열 정책으로 학습하고, 시뮬레이터에서 검증한 뒤 실물로 옮기는 흐름입니다.
 
-앞으로 올라올 저장소는 대부분 여기에 속합니다. 지금까지의 작업은 그 바탕입니다.
+이제 막 시작했습니다. 논문과 구현을 읽는 단계이고, 앞으로 올라올 저장소는 대부분 여기에 속합니다. 지금까지의 작업은 그 바탕입니다.
 
 <br>
 
@@ -57,6 +57,7 @@ SHAP을 붙이는 과정에서 <b>이전 분석의 오류를 찾아내 바로잡
 
 <p>
 <img src="https://img.shields.io/badge/ROS2-22314E?style=for-the-badge&logo=ros&logoColor=white" />
+<img src="https://img.shields.io/badge/Isaac%20Sim-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
 <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
@@ -64,13 +65,19 @@ SHAP을 붙이는 과정에서 <b>이전 분석의 오류를 찾아내 바로잡
 <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
 </p>
 
-**다루는 문제**
+**다뤄온 문제**
 
 - 변분 오토인코더 기반 이상탐지
 - 크로스 어텐션 기반 이종 신호 융합
 - 웨이블릿 변환 기반 신호 전처리
 - 적대적 생성 신경망 기반 데이터 증강
 - 섀플리 값 기반 모델 설명
+
+**배우고 있는 것**
+
+- 행동 청킹 기반 모방학습
+- 리더-팔로워 텔레오퍼레이션과 기구학 리타게팅
+- 시뮬레이터 기반 정책 검증과 실물 이전
 
 <br>
 
