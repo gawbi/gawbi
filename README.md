@@ -74,7 +74,7 @@ SHAP을 붙이는 과정에서 <b>이전 분석의 오류를 찾아내 바로잡
 
 <br>
 
-### 제 잔디 먹는 뱀
+### 뱀뱀이
 
 <div align="center">
 <picture>
@@ -87,8 +87,5 @@ SHAP을 붙이는 과정에서 <b>이전 분석의 오류를 찾아내 바로잡
 <br>
 
 <div align="center">
-
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=gawbi&show_icons=true&hide_border=true&bg_color=00000000&title_color=2F81F7&icon_color=2F81F7&text_color=8B949E&hide=issues" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gawbi&layout=compact&hide_border=true&bg_color=00000000&title_color=2F81F7&text_color=8B949E&langs_count=6" />
 
 </div>
