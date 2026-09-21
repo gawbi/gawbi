@@ -81,16 +81,6 @@ SHAP을 붙이는 과정에서 <b>이전 분석의 오류를 찾아내 바로잡
 
 <br>
 
-### 뱀뱀이
-
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gawbi/gawbi/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gawbi/gawbi/output/github-snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/gawbi/gawbi/output/github-snake.svg" />
-</picture>
-</div>
-
 <br>
 
 <div align="center">
