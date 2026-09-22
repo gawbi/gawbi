@@ -12,6 +12,14 @@
 
 **정상을 학습해서, 벗어난 것을 잡는다.**
 
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gawbi/gawbi/main/assets/journey-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gawbi/gawbi/main/assets/journey-light.svg" />
+  <img width="100%" alt="signal processing to anomaly detection to robotics" src="https://raw.githubusercontent.com/gawbi/gawbi/main/assets/journey-dark.svg" />
+</picture>
+</div>
+
 <br>
 
 ### 지금 향하는 곳
@@ -19,6 +27,11 @@
 **매니퓰레이터 모방학습.** 사람이 리더암으로 시연한 동작을 로봇이 배워 스스로 반복하게 만드는 쪽을 보고 있습니다. 텔레오퍼레이션으로 시연을 모으고, 행동 청킹 계열 정책으로 학습하고, 시뮬레이터에서 검증한 뒤 실물로 옮기는 흐름입니다.
 
 이제 막 시작했습니다. 논문과 구현을 읽는 단계이고, 앞으로 올라올 저장소는 대부분 여기에 올릴 예정입니다.
+
+**[robotics-from-scratch](https://github.com/gawbi/robotics-from-scratch)** — 좌표계부터 직접 구현하며 공부하는 기록입니다.
+읽은 것을 옮겨 적지 않고, 구현한 뒤 독립된 기준과 대조해 숫자로 확인하는 것을 규칙으로 삼습니다.
+IK 해는 FK에 다시 넣어 오차를 재고, 해석적 야코비안은 수치 미분과 비교합니다.
+검증 숫자가 없는 단계는 끝난 것으로 치지 않습니다.
 
 <br>
 
