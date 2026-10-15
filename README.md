@@ -8,7 +8,7 @@
 
 <br>
 
-신호를 다룹니다. 스펙트럼에서 시작해 음성을 거쳐, 지금은 로봇 센서를 봅니다.
+신호를 다룹니다. 스펙트럼에서 시작해 음성을 거쳐, 지금은 로봇이 걷는 법을 강화학습으로 가르칩니다.
 
 **정상을 학습해서, 벗어난 것을 잡는다.**
 
@@ -22,11 +22,33 @@
 
 <br>
 
+### 지금 하고 있는 것 — 휴머노이드 강화학습
+
+<div align="center">
+<a href="https://github.com/gawbi/robotics-rl-study"><img width="100%" alt="Isaac Lab에서 PPO로 학습한 Unitree G1 평지 보행" src="https://raw.githubusercontent.com/gawbi/robotics-rl-study/main/day4-g1-reward-baseline/images/exp0_baseline.gif" /></a>
+</div>
+
+**[robotics-rl-study](https://github.com/gawbi/robotics-rl-study)** — PPO를 직접 구현하는 것부터 시작해, Isaac Lab에서 Unitree G1 보행 정책을 학습하고 보상을 하나씩 바꿔 가며 정책이 어떻게 달라지는지 숫자로 확인하는 기록입니다.
+
+`4096 환경 병렬` · `1500 iteration / 27분` · `20초 생존 99.6%` · `직접 구현한 PPO로 CartPole 500점`
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gawbi/gawbi/main/assets/g1-ablation-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gawbi/gawbi/main/assets/g1-ablation-light.svg" />
+  <img width="100%" alt="feet_air_time을 끄면 넘어짐과 명령 추종은 그대로, 발 미끄러짐 벌점은 32% 커짐" src="https://raw.githubusercontent.com/gawbi/gawbi/main/assets/g1-ablation-dark.svg" />
+</picture>
+</div>
+
+보상 하나(`feet_air_time`)만 끈 실험에서 넘어짐과 명령 추종은 그대로였지만, 발 미끄러짐 벌점이 32% 커졌습니다.
+보상 항목 하나가 "걸을 수 있느냐"보다 "어떻게 걷느냐"를 바꾼다는 결과입니다. 시드 1개로 얻은 결과라서, 시드 3개 반복으로 다시 확인할 예정입니다.
+
+<br>
+
 ### 지금 향하는 곳
 
-**매니퓰레이터 모방학습.** 사람이 리더암으로 시연한 동작을 로봇이 배워 스스로 반복하게 만드는 쪽을 보고 있습니다. 텔레오퍼레이션으로 시연을 모으고, 행동 청킹 계열 정책으로 학습하고, 시뮬레이터에서 검증한 뒤 실물로 옮기는 흐름입니다.
-
-이제 막 시작했습니다. 논문과 구현을 읽는 단계이고, 앞으로 올라올 저장소는 대부분 여기에 올릴 예정입니다.
+**휴머노이드 Whole-Body Control.** 시뮬레이터에서 학습한 정책을 다른 시뮬레이터(MuJoCo)로 옮겨 검증하고, 실물로 옮기는 흐름까지 가는 것이 목표입니다.
+매니퓰레이터 쪽에서는 리더암으로 시연한 동작을 로봇이 배워 스스로 반복하게 만드는 모방학습도 함께 보고 있습니다.
 
 **[robotics-from-scratch](https://github.com/gawbi/robotics-from-scratch)** — 좌표계부터 직접 구현하며 공부하는 기록입니다.
 읽은 것을 옮겨 적지 않고, 구현한 뒤 독립된 기준과 대조해 숫자로 확인하는 것을 규칙으로 삼습니다.
@@ -35,7 +57,7 @@ IK 해는 FK에 다시 넣어 오차를 재고, 해석적 야코비안은 수치
 
 <br>
 
-### 과거 진행내용(포트폴리오 X)
+### 이전 프로젝트 — 신호 · 이상탐지
 
 <table>
 <tr>
@@ -69,9 +91,12 @@ SHAP을 붙이는 과정에서 <b>이전 분석의 오류를 찾아내 바로잡
 ### 도구
 
 <p>
-<img src="https://img.shields.io/badge/ROS2-22314E?style=for-the-badge&logo=ros&logoColor=white" />
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Isaac_Sim-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
+<img src="https://img.shields.io/badge/Isaac_Lab-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/ROS2-22314E?style=for-the-badge&logo=ros&logoColor=white" />
+<img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" />
 <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
 <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
@@ -79,6 +104,8 @@ SHAP을 붙이는 과정에서 <b>이전 분석의 오류를 찾아내 바로잡
 
 **다뤄온 문제**
 
+- PPO 직접 구현과 디버깅 (GAE, ratio · clip_fraction 관찰)
+- 휴머노이드 보행의 보상 설계 실험 (Isaac Lab, Unitree G1)
 - 변분 오토인코더 기반 이상탐지
 - 크로스 어텐션 기반 이종 신호 융합
 - 웨이블릿 변환 기반 신호 전처리
@@ -87,14 +114,7 @@ SHAP을 붙이는 과정에서 <b>이전 분석의 오류를 찾아내 바로잡
 
 **배우고 있는 것**
 
+- 휴머노이드 보행 정책의 sim-to-sim 검증 (Isaac Sim → MuJoCo)
 - 행동 청킹 기반 모방학습
 - 리더-팔로워 텔레오퍼레이션과 기구학 리타게팅
 - 시뮬레이터 기반 정책 검증과 실물 이전
-
-<!-- TODO: 추후 포트폴리오 작성부분 (작성 후 리드미 배치 변경) -->
-
-<br>
-
-<div align="center">
-
-</div>
