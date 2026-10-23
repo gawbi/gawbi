@@ -40,6 +40,10 @@
 </picture>
 </div>
 
+<div align="center">
+<a href="https://github.com/gawbi/robotics-rl-study/blob/main/day5-g1-reward-experiment/notes.md"><img width="100%" alt="왼쪽: 실험 0 (기본 보상), 오른쪽: 실험 1 (feet_air_time = 0). 같은 명령으로 걷는 두 정책의 비교" src="https://raw.githubusercontent.com/gawbi/robotics-rl-study/main/day5-g1-reward-experiment/images/exp0_vs_exp1.gif" /></a>
+</div>
+
 보상 하나(`feet_air_time`)만 끈 실험에서 넘어짐과 명령 추종은 그대로였지만, 발 미끄러짐 벌점이 32% 커졌습니다.
 보상 항목 하나가 "걸을 수 있느냐"보다 "어떻게 걷느냐"를 바꾼다는 결과입니다. 시드 1개로 얻은 결과라서, 시드 3개 반복으로 다시 확인할 예정입니다.
 
