@@ -28,9 +28,9 @@
 <a href="https://github.com/gawbi/robotics-rl-study"><img width="100%" alt="Isaac Lab에서 PPO로 학습한 Unitree G1 평지 보행" src="https://raw.githubusercontent.com/gawbi/robotics-rl-study/main/day4-g1-reward-baseline/images/exp0_baseline.gif" /></a>
 </div>
 
-**[robotics-rl-study](https://github.com/gawbi/robotics-rl-study)** — PPO를 직접 구현하는 것부터 시작해, Isaac Lab에서 Unitree G1 보행 정책을 학습하고 보상을 하나씩 바꿔 가며 정책이 어떻게 달라지는지 숫자로 확인하는 기록입니다.
+**[robotics-rl-study](https://github.com/gawbi/robotics-rl-study)** — 강의 실습으로 PPO를 구현해 보는 것부터 시작해, Isaac Lab에서 Unitree G1 보행 정책을 학습하고 보상을 하나씩 바꿔 가며 정책이 어떻게 달라지는지 숫자로 확인하는 기록입니다.
 
-`4096 환경 병렬` · `1500 iteration / 27분` · `20초 생존 99.6%` · `직접 구현한 PPO로 CartPole 500점`
+`4096 환경 병렬` · `1500 iteration / 27분` · `20초 생존 99.6%` · `실습으로 구현한 PPO로 CartPole 500점`
 
 <div align="center">
 <picture>
@@ -71,7 +71,7 @@
 
 ROS2 노드로 만든 UAV · UGV 이상탐지 모듈. 센서가 조작됐는지 VAE 재구성 오차로 판별합니다. 공격 에이전트를 따로 만들고, 같은 공격을 오프라인으로 주입해 방어 모듈을 검증했습니다.
 
-`p99 추론 0.041 ms (UGV) · 0.119 ms (UAV)` · `10 Hz 예산의 0.12 % 이하` · `합성 센서 데이터`
+`p99 추론 0.041 ms (UGV) · 0.119 ms (UAV)` · `Apple M5 CPU 1스레드 기준` · `10 Hz 예산의 0.12 % 이하` · `합성 센서 데이터`
 
 SHAP을 붙이는 과정에서 <b>이전 분석의 오류를 찾아내 바로잡았습니다.</b>
 
@@ -94,6 +94,14 @@ SHAP을 붙이는 과정에서 <b>이전 분석의 오류를 찾아내 바로잡
 
 <br>
 
+### 그 외
+
+- **[MENDAI](https://github.com/gawbi/MENDAI)** — 팀 프로젝트. 분류기(DINO)와 탐지기(DETR · YOLO) 실험. DETR 쪽은 신뢰구간과 conf 선택 기준을 적어 두었습니다.
+- **[track-digital-twin](https://github.com/gawbi/track-digital-twin)** — 라즈베리파이 자율주행 실습 트랙의 디지털 트윈 도면. 치수마다 측정 · 사진 · 추정 출처를 구분해 표기했습니다.
+- **[legacy-archive](https://github.com/gawbi/legacy-archive)** — 2020년 C/C++ 수업 실습 코드 아카이브.
+
+<br>
+
 ### 비공개 프로젝트
 
 코드를 올릴 수 없는 작업들입니다. 데이터가 기관 소유이거나, 발표 전 연구이거나, 원 구현의 공개 동의가 아직 없습니다. 주제와 역할만 남깁니다.
@@ -102,7 +110,7 @@ SHAP을 붙이는 과정에서 <b>이전 분석의 오류를 찾아내 바로잡
 |---|---|---|
 | **VLM 보조 라벨링으로 사람 검토 줄이기** · 2026-10 | 로봇 과제의 성공/실패 라벨을 로컬 VLM이 먼저 달고 사람은 일부만 검토하는 파이프라인을 만들고, 합성 데이터로 검토 정책을 비교했습니다. HIL-SERL 보상 분류기용이며, 소프트웨어 시제품과 합성 실험까지 마쳤고 실제 로봇 실험은 아직 전입니다. | 연구실 발표 전 연구 |
 | **보상 기반 critic shaping 연구 인수인계** · 2026-10 ~ | 지도교수의 연구를 인수인계 받아 원본 실험 결과를 재집계해 검증하고, 이어받기 위한 학습 교재와 재집계 도구를 작성했습니다. 학습 실험은 재실행하지 않았습니다. | 미발표 연구 |
-| **운동화 손상 탐지** · 2026-10 | CVAT 사람 라벨로 YOLO를 학습하고, 라벨 없는 원본에 슈도 라벨을 달아 검수 뒤 재학습하는 파이프라인을 만들었습니다. 자동 라벨러 세 종(YOLO · Grounding DINO · SAM 3) 비교 스크립트를 포함합니다. | 이미지 데이터가 기관 소유 |
+| **운동화 손상 탐지 — 슈도 라벨 파이프라인** · 2026-10 | CVAT 사람 라벨로 YOLO를 학습하고, 라벨 없는 원본에 슈도 라벨을 달아 검수 뒤 재학습하는 파이프라인을 만들었습니다. 자동 라벨러 세 종(YOLO · Grounding DINO · SAM 3) 비교 스크립트를 포함합니다. 같은 과제의 모델 실험은 [MENDAI](https://github.com/gawbi/MENDAI)에 공개돼 있습니다. | 원본 라벨 파일과 데이터 경로를 포함 |
 | **라만 스펙트럼 전처리** · 2026-01 ~ 07 | 선행 연구자의 RSGAN · RSBPCNN 구현을 인수인계 받아 베이스라인 생성기와 쌍 지도학습으로 개선하고 재학습했습니다. | 원 구현의 공개 동의 전 |
 
 <br>
@@ -114,7 +122,6 @@ SHAP을 붙이는 과정에서 <b>이전 분석의 오류를 찾아내 바로잡
 <img src="https://img.shields.io/badge/Isaac_Lab-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/ROS2-22314E?style=for-the-badge&logo=ros&logoColor=white" />
 <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" />
 <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
@@ -131,7 +138,7 @@ SHAP을 붙이는 과정에서 <b>이전 분석의 오류를 찾아내 바로잡
 - 적대적 생성 신경망 기반 데이터 증강
 - 섀플리 값 기반 모델 설명
 
-**배우고 있는 것**
+**다음에 보려는 것** (아직 저장소에 코드가 없습니다)
 
 - 휴머노이드 보행 정책의 sim-to-sim 검증 (Isaac Sim → MuJoCo)
 - 행동 청킹 기반 모방학습
