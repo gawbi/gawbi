@@ -24,10 +24,6 @@
 
 ### 지금 하고 있는 것 — 휴머노이드 강화학습
 
-<div align="center">
-<a href="https://github.com/gawbi/robotics-rl-study"><img width="100%" alt="Isaac Lab에서 PPO로 학습한 Unitree G1 평지 보행" src="https://raw.githubusercontent.com/gawbi/robotics-rl-study/main/day4-g1-reward-baseline/images/exp0_baseline.gif" /></a>
-</div>
-
 **[robotics-rl-study](https://github.com/gawbi/robotics-rl-study)** — 강의 실습으로 PPO를 구현해 보는 것부터 시작해, Isaac Lab에서 Unitree G1 보행 정책을 학습하고 보상을 하나씩 바꿔 가며 정책이 어떻게 달라지는지 숫자로 확인하는 기록입니다.
 
 `4096 환경 병렬` · `1500 iteration / 27분` · `20초 생존 99.6%` · `실습으로 구현한 PPO로 CartPole 500점`
@@ -46,6 +42,22 @@
 
 보상 하나(`feet_air_time`)만 끈 실험에서 넘어짐과 명령 추종은 그대로였지만, 발 미끄러짐 벌점이 32% 커졌습니다.
 보상 항목 하나가 "걸을 수 있느냐"보다 "어떻게 걷느냐"를 바꾼다는 결과입니다. 시드 1개로 얻은 결과라서, 시드 3개 반복으로 다시 확인할 예정입니다.
+
+<br>
+
+### 캡스톤 준비 — 말하고 걷는 상상부기
+
+<div align="center">
+<img width="300" alt="상상부기 로봇 Day 1: 동상 비율로는 뒤로 기울어 등껍질에 기대고, 배치를 바꾼 균형안은 버티며, 원본 보행 정책으로 걷는 MuJoCo 시뮬레이션" src="https://raw.githubusercontent.com/gawbi/gawbi/main/assets/bugi-reel-day1.gif" />
+</div>
+
+한성대 마스코트 상상부기의 외형으로 이족보행 로봇을 만드는 캡스톤 준비 작업입니다. 오픈소스 [Open Duck Mini v2](https://github.com/apirrone/Open_Duck_Mini)의 다리 기구를 그대로 쓰고, 실물을 만들기 전에 MuJoCo 개념 모델로 외형 배치부터 검증했습니다.
+동상 비율 그대로 외피를 씌우면 무게중심이 발 뒤로 가서 서보만으로 서지 못했고, 몸통과 머리를 앞으로 옮기고 배터리를 배 쪽으로 내려 해결했습니다.
+
+`뒤로 넘어지는 각도 3.8° → 11.9° (원본 11.4°)` · `원본 보행 정책 그대로, 부기 무게 모델 13초 86 cm` · `개념 모델 1.96 kg`
+
+보행은 원본 공개 정책을 목 서보를 남긴 부기 무게 모델에 그대로 돌린 결과이고, 목을 고정한 10관절 부기용 재학습과 실물 제작은 다음 학기 과제입니다.
+학교 캐릭터를 쓰는 프로젝트라 저장소는 비공개이고, 영상은 시뮬레이션 합성입니다(캐릭터 · 로고 © 한성대학교).
 
 <br>
 
