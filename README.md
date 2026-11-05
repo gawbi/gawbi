@@ -14,12 +14,16 @@
 
 [![해양 충전](https://img.shields.io/badge/%ED%95%B4%EC%96%91_%EC%B6%A9%EC%A0%84-PlugBot-b8e35c?style=for-the-badge&labelColor=161b18)](https://gawbi.github.io/lab/#mod-plugbot) ![건설 용접 (비공개)](https://img.shields.io/badge/%EA%B1%B4%EC%84%A4_%EC%9A%A9%EC%A0%91-%EB%B9%84%EA%B3%B5%EA%B0%9C-6b7369?style=for-the-badge&labelColor=161b18) [![자율주행](https://img.shields.io/badge/%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-Sim--to--Real-b8e35c?style=for-the-badge&labelColor=161b18)](https://github.com/gawbi/track-digital-twin/tree/feat/isaac-sim-rtx5070) [![식품 선별](https://img.shields.io/badge/%EC%8B%9D%ED%92%88_%EC%84%A0%EB%B3%84-%ED%8C%8C%EA%B0%81_%EA%B2%80%EC%B6%9C-b8e35c?style=for-the-badge&labelColor=161b18)](https://github.com/gawbi/IDEAEYE) [![국방](https://img.shields.io/badge/%EA%B5%AD%EB%B0%A9-%EC%84%BC%EC%84%9C_%EC%9D%B4%EC%83%81%ED%83%90%EC%A7%80-b8e35c?style=for-the-badge&labelColor=161b18)](https://github.com/gawbi/haegeum-addon) [![교육 홍보](https://img.shields.io/badge/%EA%B5%90%EC%9C%A1_%ED%99%8D%EB%B3%B4-%EC%83%81%EC%83%81%EB%B6%80%EA%B8%B0-b8e35c?style=for-the-badge&labelColor=161b18)](https://gawbi.github.io/lab/#mod-bugi)
 
-안녕하세요, 김광빈입니다. 될 때까지 들이받는 박치기공룡입니다.
-현대차 의왕연구소 지하주차장에서 전기차를 스스로 충전하는 로봇팔을 보고, 그 기술을 파도에 흔들리는 전기 선박으로 옮기고 있습니다. 사람이 붙어 있어야 하던 항구의 충전 작업을 로봇에게 맡기려는 겁니다.
-그리고 Isaac Sim에서만 달리던 차를 실제 트랙에 세워, 가상에서 완주하던 모델이 현실에서 왜 벗어나는지 하나씩 좁혀 가고 있습니다.
+안녕하세요, 될 때까지 들이받는 '박치기공룡' 김광빈입니다.
 
-새벽 4시 50분에 일어나 골프장 일을 마치고 학교로 가면서 주 69시간 일과 24학점을 같이 했습니다. 시간이 모자라 Claude로 일정 관리 앱을 직접 만들어 썼고, 그때부터 AI는 제 손에 익은 도구가 됐습니다. 그래서 AI가 낸 숫자일수록 먼저 의심합니다.
-계속 달리기만 하던 방식은 저한테 맞지 않았고, 넘어져도 다시 일어나는 법을 배웠습니다. 안 풀리면 밥도 안 먹고 붙어 있습니다.
+현대차 의왕연구소에서 전기차를 스스로 충전하는 로봇팔을 본 후, 저는 그 기술을 파도에 흔들리는 전기 선박 위로 옮기고 있습니다. 사람이 직접 붙어 있어야 했던 위험한 항구의 충전 작업을 로봇에게 온전히 맡기는 것이 제 목표입니다.
+
+건설 현장에서는 숙련 용접공의 위빙 손기술을 로봇이 배워 그대로 재현하도록 만드는 산학 과제를 하고 있습니다. 비공개 과제라 자세한 내용은 공개하기 어렵습니다.
+
+또한, Isaac Sim에서만 달리던 차를 실제 트랙에 올려두고, 가상에서 완주하던 모델이 현실에서 왜 벗어나는지 그 간극(Sim-to-Real)을 하나씩 집요하게 좁혀가고 있습니다. 정답을 찾을 때까지 현실의 문제에 부딪치고 증명하겠습니다.
+
+새벽 4시 50분, 골프장 일을 마치고 곧장 학교로 향했습니다. 주 69시간을 일하며 24학점을 들었고, 모자란 시간을 메우려고 Claude로 일정 관리 앱을 직접 만들어 썼습니다. 그때부터 AI는 제 손에 익은 도구가 됐고, 그렇기에 AI가 낸 숫자일수록 먼저 의심하고 직접 검증합니다.
+처음에는 쉬지 않고 달리는 방법만 고집했지만, 그 방식은 제게 맞지 않았습니다. 대신 넘어져도 다시 일어나는 법을 터득했고, 그 덕분에 더 단단해졌습니다.
 
 포트폴리오: [gawbi.github.io/lab](https://gawbi.github.io/lab/)
 
