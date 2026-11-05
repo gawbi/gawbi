@@ -2,14 +2,24 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gawbi/gawbi/main/assets/banner-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gawbi/gawbi/main/assets/banner-light.svg" />
-  <img width="100%" alt="Gwangbin Kim" src="https://raw.githubusercontent.com/gawbi/gawbi/main/assets/banner-dark.svg" />
+  <img width="100%" alt="김광빈" src="https://raw.githubusercontent.com/gawbi/gawbi/main/assets/banner-dark.svg" />
 </picture>
 </div>
 
 <br>
 
-안녕하세요, 김광빈입니다. 라만 스펙트럼과 음성 같은 신호 데이터로 공부를 시작했고, 센서 이상탐지를 거쳐 지금은 로봇 학습을 하고 있습니다.
-요즘은 시뮬레이션에서 학습한 정책을 실제 하드웨어로 옮기는 일에 관심이 많습니다.
+**AI 네이티브 인재가 로봇으로 현장 문제를 풉니다.**
+
+해양 충전, 건설 용접, 자율주행, 식품 선별, 국방, 교육 홍보까지 현장에서 직접 부딪히고 있습니다.
+
+[![해양 충전](https://img.shields.io/badge/%ED%95%B4%EC%96%91_%EC%B6%A9%EC%A0%84-PlugBot-b8e35c?style=for-the-badge&labelColor=161b18)](https://gawbi.github.io/lab/#mod-plugbot) ![건설 용접 (비공개)](https://img.shields.io/badge/%EA%B1%B4%EC%84%A4_%EC%9A%A9%EC%A0%91-%EB%B9%84%EA%B3%B5%EA%B0%9C-6b7369?style=for-the-badge&labelColor=161b18) [![자율주행](https://img.shields.io/badge/%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-Sim--to--Real-b8e35c?style=for-the-badge&labelColor=161b18)](https://github.com/gawbi/track-digital-twin/tree/feat/isaac-sim-rtx5070) [![식품 선별](https://img.shields.io/badge/%EC%8B%9D%ED%92%88_%EC%84%A0%EB%B3%84-%ED%8C%8C%EA%B0%81_%EA%B2%80%EC%B6%9C-b8e35c?style=for-the-badge&labelColor=161b18)](https://github.com/gawbi/IDEAEYE) [![국방](https://img.shields.io/badge/%EA%B5%AD%EB%B0%A9-%EC%84%BC%EC%84%9C_%EC%9D%B4%EC%83%81%ED%83%90%EC%A7%80-b8e35c?style=for-the-badge&labelColor=161b18)](https://github.com/gawbi/haegeum-addon) [![교육 홍보](https://img.shields.io/badge/%EA%B5%90%EC%9C%A1_%ED%99%8D%EB%B3%B4-%EC%83%81%EC%83%81%EB%B6%80%EA%B8%B0-b8e35c?style=for-the-badge&labelColor=161b18)](https://gawbi.github.io/lab/#mod-bugi)
+
+안녕하세요, 김광빈입니다. 될 때까지 들이받는 박치기공룡입니다.
+현대차 의왕연구소 지하주차장에서 전기차를 스스로 충전하는 로봇팔을 보고, 그 기술을 파도에 흔들리는 전기 선박으로 옮기고 있습니다. 사람이 붙어 있어야 하던 항구의 충전 작업을 로봇에게 맡기려는 겁니다.
+그리고 Isaac Sim에서만 달리던 차를 실제 트랙에 세워, 가상에서 완주하던 모델이 현실에서 왜 벗어나는지 하나씩 좁혀 가고 있습니다.
+
+새벽 4시 50분에 일어나 골프장 일을 마치고 학교로 가면서 주 69시간 일과 24학점을 같이 했습니다. 시간이 모자라 Claude로 일정 관리 앱을 직접 만들어 썼고, 그때부터 AI는 제 손에 익은 도구가 됐습니다. 그래서 AI가 낸 숫자일수록 먼저 의심합니다.
+계속 달리기만 하던 방식은 저한테 맞지 않았고, 넘어져도 다시 일어나는 법을 배웠습니다. 안 풀리면 밥도 안 먹고 붙어 있습니다.
 
 포트폴리오: [gawbi.github.io/lab](https://gawbi.github.io/lab/)
 
@@ -78,6 +88,7 @@ UAV, UGV 센서가 조작됐는지 VAE 재구성 오차로 잡는 ROS2 모듈입
 데이터가 기관 소유이거나 발표 전 연구라서 코드를 올리지 못한 작업입니다.
 
 - **PlugBot** (해커톤): SO-101 로봇팔로 파도에 흔들리는 선박 충전 소켓에 플러그를 꽂습니다. MuJoCo에서 카메라 지연을 넣고 비교해 보니, 파고 8cm에서 최신 위치를 따라가는 방식은 6.7%, 0.3초 뒤를 예측해 꽂는 방식은 80% 성공했습니다. 실물 실험을 준비하고 있습니다.
+- **숙련 용접공 위빙 자동화** (산학 과제): 숙련공의 손기술을 로봇이 배워 재현하게 하는 과제입니다. 기업과의 과제라 내용은 공개하기 어렵습니다.
 - **VLM 보조 라벨링**: 로봇 과제의 성공/실패를 로컬 VLM이 먼저 판단하고 사람은 일부만 검토하는 파이프라인입니다. 연구실 발표 전입니다.
 - **보상 기반 critic shaping 연구 인수인계**: 지도교수님 연구의 원본 결과를 다시 집계해 확인하고 인수인계 자료를 정리했습니다.
 - **라만 스펙트럼 전처리** (2026.01~07): 선행 연구자의 RSGAN, RSBPCNN 구현을 이어받아 개선했습니다. 원 구현의 공개 동의를 기다리고 있습니다.
